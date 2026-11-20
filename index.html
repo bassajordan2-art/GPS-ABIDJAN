@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1877F2">
+<title>GPS CI V8 TEMPS REEL - Bassa Jordan</title>
+<!-- Lien vers le fichier CSS externe -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top">
+<h1>📍 GPS Abidjan 🇨🇮</h1>
+<p><span class="live-dot"></span> V8 TEMPS RÉEL - <span id="heureLive">--:--:--</span></p>
+<span class="badge">BASSA JORDAN • NANGUI ABROGOUA</span>
+</div>
+
+<div class="card">
+<div class="chips">
+<button class="chip" onclick="rapide('Cocody - Saint Jean','Plateau - Centre')">Cocody → Plateau</button>
+<button class="chip" onclick="rapide('Abobo - Gare','Adjamé - Liberté')">Abobo → Adjamé</button>
+<button class="chip" onclick="rapide('Plateau - Centre','Treichville - Gare de Bassam')">Plateau → Treichville 🚤</button>
+<button class="chip" onclick="rapide('Yopougon - Siporex','Plateau - Centre')">Yopougon → Plateau</button>
+</div>
+<label>📍 Tu pars d'où ?</label>
+<select id="depart"></select>
+<button class="btn btn-loc" onclick="maPosition()">🎯 Utiliser ma position exacte (GPS)</button>
+<label>🎯 Tu vas où ?</label>
+<select id="arrivee"></select>
+<button class="btn btn-blue" onclick="calculer()">🔍 CALCULER EN TEMPS RÉEL</button>
+<button class="btn btn-green" id="btnMaps" onclick="ouvrirMaps()" style="display:none">🗺️ Voir le trajet sur Google Maps</button>
+<div class="refresh" id="lastUpdate"></div>
+</div>
+
+<div class="card" id="resultCard" style="display:none">
+<div class="result" id="resultat"></div>
+<div id="toutTransport"></div>
+</div>
+
+<p class="small">Fait par Bassa Jordan<br>Université Nangui Abrogoua - 2026<br>GPS CI V8 - Spécial Abidjan</p>
+
+<!-- Lien vers le fichier JavaScript externe -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, Arial;
+    background: #f0f2f5;
+    padding-bottom: 100px;
+}
+
+.top {
+    background: linear-gradient(135deg, #1877F2, #0A2A5E);
+    color: white;
+    padding: 22px 16px 26px;
+    border-radius: 0 0 28px 28px;
+    text-align: center;
+}
+
+.live-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #00FF00;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: .3; }
+}
+
+.top h1 {
+    margin: 0;
+    font-size: 27px;
+}
+
+.badge {
+    background: #FF8C00;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 900;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.card {
+    background: white;
+    margin: 14px;
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+label {
+    font-weight: 800;
+    display: block;
+    margin: 14px 0 6px;
+}
+
+select, input {
+    width: 100%;
+    padding: 15px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 14px;
+    font-size: 16px;
+    background: #f9f9f9;
+}
+
+.btn {
+    width: 100%;
+    padding: 17px;
+    border: 0;
+    border-radius: 16px;
+    font-size: 17px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background: #1877F2;
+    margin-top: 16px;
+}
+
+.btn-green {
+    background: #42B72A;
+    margin-top: 10px;
+}
+
+.btn-loc {
+    background: white;
+    color: #1877F2;
+    border: 2px solid #1877F2;
+    margin-top: 10px;
+}
+
+.result {
+    white-space: pre-line;
+    line-height: 1.75;
+    font-size: 15px;
+}
+
+.chips {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.chip {
+    white-space: nowrap;
+    background: #eef4ff;
+    color: #1877F2;
+    padding: 9px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+
+.box {
+    border-radius: 16px;
+    padding: 14px;
+    margin-top: 12px;
+    border: 2px solid #eee;
+}
+
+.box-taxi {
+    background: #E3F2FD;
+    border-color: #2196F3;
+}
+
+.taxi-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    background: white;
+    border: 2px solid #eee;
+    border-radius: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.taxi-btn b {
+    font-size: 16px;
+}
+
+.prix-live {
+    background: #00C853;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.small {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.refresh {
+    font-size: 12px;
+    color: #1877F2;
+    text-align: center;
+    margin-top: 8px;
+}
